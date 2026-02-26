@@ -1,0 +1,123 @@
+/* ── Variables ───────────────────────────────────────────────── */
+:root {
+  --bg-deep:    #020817;
+  --bg-card:    #0b1628;
+  --bg-input:   #0f1e35;
+  --border:     #1e3a5f;
+  --border2:    #2d5a8e;
+  --text:       #e2e8f0;
+  --text2:      #94a3b8;
+  --text3:      #475569;
+  --accent:     #38bdf8;
+  --accent2:    #7dd3fc;
+  --accent-glow:#38bdf840;
+  --gold:       #fbbf24;
+  --green:      #4ade80;
+  --red:        #f87171;
+}
+
+/* ── Starfield ───────────────────────────────────────────────── */
+.stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 60%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 50% 10%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 80%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 40%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 75%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 45% 45%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 65% 25%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 85% 65%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 25% 35%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 85%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 15%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 5%  55%, #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 95% 5%,  #fff 0%, transparent 100%),
+    radial-gradient(1px 1px at 35% 95%, #fff 0%, transparent 100%);
+  opacity: 0.6;
+  animation: twinkle 6s ease-in-out infinite alternate;
+}
+
+.stars--2 {
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #38bdf8 0%, transparent 100%),
+    radial-gradient(1px 1px at 40% 70%, #38bdf8 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 15%, #38bdf8 0%, transparent 100%),
+    radial-gradient(1px 1px at 80% 50%, #38bdf8 0%, transparent 100%),
+    radial-gradient(1px 1px at 10% 90%, #38bdf8 0%, transparent 100%),
+    radial-gradient(1px 1px at 50% 50%, #38bdf8 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 30%, #38bdf8 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 70%, #38bdf8 0%, transparent 100%);
+  opacity: 0.3;
+  animation: twinkle 8s ease-in-out infinite alternate-reverse;
+}
+
+.stars--3 {
+  background:
+    radial-gradient(ellipse at 20% 50%, #0c2a4a 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, #0a1f3d 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, #071428 0%, transparent 50%);
+}
+
+@keyframes twinkle {
+  from { opacity: 0.4; }
+  to   { opacity: 0.8; }
+}
+
+/* ── Layout ──────────────────────────────────────────────────── */
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeDown 0.6s ease;
+}
+
+.header-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+  display: block;
+  filter: drop-shadow(0 0 20px #38bdf880);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+.header-title {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #e2e8f0 0%, #38bdf8 50%, #7dd3fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.header-sub {
+  font-size: 15px;
+  color: var(--text2);
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
