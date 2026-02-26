@@ -224,15 +224,6 @@ GET /api/exoplanets/search?disc_year=2020&discoverymethod=Transit
 
 ---
 
-## 💼 Resume Description
-
-**For Gen AI / AI Tools roles:**
-> *"Built NASA Exoplanet Explorer using AI-assisted development — directed Claude AI to architect and implement a full-stack React + Node.js app, made all key technical decisions (caching strategy, UX design, fallback architecture), debugged real API failures mid-build, and maintained complete understanding of every component."*
-
-**For Software Engineer roles:**
-> *"Built NASA Exoplanet Explorer — a full-stack web app using React and Node.js/Express that queries 6,000+ confirmed exoplanets from NASA's Exoplanet Archive. Features in-memory data caching for instant search, NASA API + local CSV fallback for reliability, and a sortable results table with live NASA planet links."*
-
----
 
 ## 📄 Data Source
 
