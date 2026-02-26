@@ -1,8 +1,8 @@
-# 🪐 NASA Exoplanet Explorer
+﻿# 🪐 NASA Exoplanet Explorer
 
 A full-stack web application that lets you query **6,000+ confirmed exoplanets** from NASA's official Exoplanet Archive — built using AI-assisted development with React and Node.js.
 
-> 🔴 **Live Demo:** _Coming soon_
+> 🔴 **Live Demo:** [nasa-exoplanet-explorer-steel.vercel.app](https://nasa-exoplanet-explorer-steel.vercel.app)
 
 ---
 
