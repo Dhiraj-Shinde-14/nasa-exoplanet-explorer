@@ -1,6 +1,7 @@
 ﻿# 🪐 NASA Exoplanet Explorer
 
-A full-stack web application that lets you query **6,000+ confirmed exoplanets** from NASA's official Exoplanet Archive — built with React and Node.js.
+A full-stack web application that lets you query **6,000+ confirmed exoplanets** from NASA's official Exoplanet Archive.
+built with React and Node.js.
 
 > 🟢 **Live Demo:** [nasa-exoplanet-explorer-steel.vercel.app](https://nasa-exoplanet-explorer-steel.vercel.app)
 
@@ -43,7 +44,7 @@ NASA API (live)
 ```
 
 **Why in-memory caching?**
-Data is loaded once on server startup and stored as a JavaScript array. Every search is a `.filter()` on that array — no database, no repeated API calls. Results return in milliseconds.
+Data is loaded once on server startup and stored as a JavaScript array. Every search is a `.filter()` on that array not on database, no repeated API calls. Results return in milliseconds.
 
 **Why the CSV fallback?**
 NASA's API occasionally goes down for maintenance or blocks requests. The local CSV ensures the app always works regardless of NASA's uptime.
